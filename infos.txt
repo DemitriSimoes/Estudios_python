@@ -1,0 +1,81 @@
+para rodar o programa do python no terminal
+- digitar: python 'nome do program com a extensão .py'
+-pip install <nome da biblioteca>: 
+        para instalar uma biblioteca
+        ex: pip install requests 
+        (biblioteca para requisição de api)
+- # : simbolo para fazer comentario de linha
+- # %% : comentário especial (jupyter), esse comando
+        separa em células e faz com que
+        execute os codigos que estão abaixo dele
+- variaveis são dinamicas: mudam de valor/objeto
+        conforme a referencia
+- input: comando de entrada de dados,
+        mas lembre-se que esses dados
+        podem ser tratados, exemplo,
+        se está esperando um inteiro
+        ou float e vem uma string etc
+- \n : quebra uma linha
+- """ : tres aspas faz com que dentro de """ """
+        pode escrever varias linhas sem
+        precisar usar \n
+- selecionar multiplinos valores iguais: 
+        seleciona o valor e depois
+        aperta crtl+d
+- while True: laço infinito considerando que
+        o true deixa a condição sempre a mesma
+        mas posso colocar uma condição dentro
+        do laço com o if e se isso acontecer
+        adiciona 'break' para parar o laço
+- for i in x: o for já percorre, faz uma iteração
+        por isso não precisa incrementar,
+        o for faz isso sozinho
+- shift+alt+i -> depois de selecionar tudo aperta
+        essas teclas e o cursor vai para o final
+        de todas as linhas selecionadas
+        depois pode mover o cursor para o inicio
+        com home ou seta, depois aperta
+        crtl+shift+seta para o lado e seleciona
+        o que deseja de todas as linhas
+- array: no python não tem array, mas se usa
+        listas dentro de lista para montar 
+        um array
+- tupla: (item, item) é como se fosse uma lista
+        que não pode ser alterada, mas
+        se dentro da tupla tem um objeto que
+        é mutável, como uma lista dentro da
+        tupla, ai posso mudar a lista, mas
+        não posso deletar essa lista da tupla
+        ou adicionar outras coisas.
+- def x(): cria uma funcao, onde x é o nome
+        da funcao e () pode ou não ter
+        variaveis para entrar, pode ser
+        f(x), onde f é o nome da função e (x)
+        o valor que tem que entrar, depois abaixo
+        pode usar return para retornar alguma coisa
+        como exemplo, def f(x): return 1+x.
+- *args: é uma lista de valores/argumentos,
+        para ir acrescentando em uma função
+- **kwargs: é um dicionário de valores/dados,
+        para ir acrescentando em uma função
+- valor=0: quando atribuimos um valor, =0 ou 
+        =1 etc, esse valor se torna opcional
+- alterando valor de dicionario:
+        dict_novo['idade'] = 
+        [int(i) for i in dict_novo['idade']]
+        jeito mais limpo e correto de fazer
+         mudança da coluna
+        outro jeiot, enumerate já pega o index
+         (idx) direto sem precisar fazer
+          range(len(dict_novo['idade']))
+        ficaria assim: 
+        for i, j in enumerate(dict_novo['idade'])
+          dict_novo['idade'][i] = int(j)
+- apis: resposta = requests.get(),
+        r = resposta.json(),
+        print(type(r)), pois precisa-se
+        verificar se o json() veio como
+        dict ou lista.
+- github api repo free:
+        https://github.com/public-apis/public-apis
+
