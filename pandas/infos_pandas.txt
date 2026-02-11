@@ -41,4 +41,10 @@
     pode colocar um numero dentro do parenteses
 - .tail(): mostra o final da lista
 - .sample(n): amostra aleatoria
+- rename: renomeia um nome, por exemplo de
+    uma coluna (columns={}), mas para a 
+    mudança fazer efeito, pode-se reatribuir
+    o dataframe com df = df.remane()
+    ou colocar inplace=True dentro do rename
+
 
