@@ -46,5 +46,17 @@
     mudança fazer efeito, pode-se reatribuir
     o dataframe com df = df.remane()
     ou colocar inplace=True dentro do rename
+- astype(int): converte uma serie de str, 
+    por exemplo em inteiros
+- result = teste['Edades'].astype(int) >= 18
+    cria uma nova serie de true ou false,
+    depois para filtrar só as linhas:
+    teste[result], ou diretamente:
+    teste[teste['Edades'].astype(int)>=18]
+- para filtrar por duas validações:
+    e: usa-se (series_contruida) & (outra_serie)
+    mas pode-se usar '*' em vez de '&',
+    ou: usa-se (series_construida) | (outra_serie)
+    mas pode=se usar '+' em vez de '|' 
 
 
