@@ -1,0 +1,62 @@
+- listas: podem ter varios tipos dentro de
+    uma mesma lista
+- series panda: transforma tudo no mesmo
+    tipo, favorecendo calculos estatisticos,
+    mas caso as lista não tenha tudo do mesmo
+    tipo a series não transforma str em
+    float ou int.
+- ** importante **:
+    quando o panda cria a serie que 
+    referencia a lista, ele vai
+    criar um indice desses valores e
+    isso vai se manter sempre,  
+    então mesmo que você mude a 
+    ordem depois da série, o indice
+    vai seguir o valor, ou o valor
+    vai seguir o indice, pois pode
+    ser que tenha dois indices iguais
+    mas vai ficar sempre vinculado com 
+    seu ou seus respectivos valores,
+    então nesse caso se chamar o indice
+    ele vai mostrar os dois valores
+    associados a ele.
+- iloc funciona como uma lista, 
+    ai sim pode usar os números 0, -1 etc,
+    pois o iloc ignora o indice
+- se eu pegar o iloc de uma série,
+    eu pego a linha em relação ao
+    índice linha
+    se eu pegar o iloc de um DataFrame,
+    eu pego as linhas de uma coluna
+    onde ele retorna uma serie a qual
+    o indice eh o nome da coluna e o
+    valor a linha de indice 0 por exemplo
+- o DataFrame tem uma lista dentro dele,
+    como se fosse um dicionario de chave
+    e nos valores tem listas dentro,
+    mais especificamente listas de listas
+    e que é uma série
+- .head(): mostra a 5 primeiras linhas por
+    padrão, mas se quiser customizar
+    pode colocar um numero dentro do parenteses
+- .tail(): mostra o final da lista
+- .sample(n): amostra aleatoria
+- rename: renomeia um nome, por exemplo de
+    uma coluna (columns={}), mas para a 
+    mudança fazer efeito, pode-se reatribuir
+    o dataframe com df = df.remane()
+    ou colocar inplace=True dentro do rename
+- astype(int): converte uma serie de str, 
+    por exemplo em inteiros
+- result = teste['Edades'].astype(int) >= 18
+    cria uma nova serie de true ou false,
+    depois para filtrar só as linhas:
+    teste[result], ou diretamente:
+    teste[teste['Edades'].astype(int)>=18]
+- para filtrar por duas validações:
+    e: usa-se (series_contruida) & (outra_serie)
+    mas pode-se usar '*' em vez de '&',
+    ou: usa-se (series_construida) | (outra_serie)
+    mas pode=se usar '+' em vez de '|' 
+
+

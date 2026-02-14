@@ -1,1 +1,4 @@
-# Estudios en python
+# Estudios Python y Pandas
+
+- Estudiando codigos, sintaxe python 
+- Estudiando pandas
